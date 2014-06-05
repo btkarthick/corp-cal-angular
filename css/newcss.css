@@ -1,0 +1,2634 @@
+@font-face
+{
+font-family: myriad-web-pro;
+src: url('font/myriad-web-pro.ttf');  
+}
+*
+{
+	font-family: myriad-web-pro !important;
+	text-shadow: none !important;
+	behavior: url(js/Required/PIE.htc);
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ui.focus
+{
+	border: 0px;
+}
+.event_list_text
+{
+	border-left: 8px solid;
+	padding-left: 2px;
+	padding-top: 1px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.e_l_text
+{
+	white-space: nowrap;
+}
+a
+{
+	display: block !important;
+}
+#home_page div.ui-content
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.content-primary
+{
+	float: left;
+	width:25%;
+}
+.calender-data
+{
+	
+}
+.content-secondry
+{
+	width: 75%;
+	float: left;
+}
+.calendar{
+width:100%;
+}
+.calendar ul.weekdays
+{
+	height: 22px;
+	background: #FFFFFF;
+	padding-top: 16px;
+}
+.calendar ul {
+    clear: both;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	
+}
+.month-browser
+{
+	margin: auto !important;
+	width: 54% !important;
+}
+.calendar ul.weekdays li {
+    border: medium none !important;
+    color: #808080;
+    font-size: 90%;
+    line-height: 19px;
+	padding:4px .61%;
+    text-align: center;
+    text-transform: uppercase;
+	font-weight: normal;
+	!padding-top:0;
+	padding-bottom: 0px;
+}
+.calendar li {
+    border: 1px solid #DFDFDF;
+    display: block;
+    float: left;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    overflow: visible !important;
+    padding:.61%;
+    width:12.9%;
+	
+	/* border-radius:8px; */
+}
+.calendar .date {
+	font-weight:bold;
+    margin-bottom: 5px;
+	font-size: 15px;
+    text-align: right;
+}
+.date a.ui-link
+{
+	color: #9C9C9C !important;
+}
+.day,.month{
+display:none;
+}
+.calendar-day{
+border: 1px solid #AD7841;
+height:143px;
+border-top: 1px solid #96d1f8;
+/* background: -webkit-gradient(linear, left top, left bottom, from(#e7ecf0), to(#bad2e0));
+background: -webkit-linear-gradient(top, #e7ecf0, #bad2e0);
+background: -moz-linear-gradient(top, #e7ecf0, #bad2e0);
+background: -ms-linear-gradient(top, #e7ecf0, #bad2e0);
+background: -o-linear-gradient(top, #e7ecf0, #bad2e0); */
+
+
+behavior:url(PIE.htc);
+}
+.calendar ul.month-browser li {
+    border: 0 none;
+    height: auto;
+    margin: 0px 0;
+    padding: 0;
+    text-align: center;
+    /* text-transform: uppercase; */
+    width: 33.3%;
+}
+a{
+color:#fff;
+text-decoration:none;
+}
+.audit{
+background:#923667;
+color:#fff;
+}
+.state{
+background:#46C8FF;
+color:#000;
+}
+.change{
+background:#F589C6;
+color:#000;
+}
+.dark{
+background:#CA9BF7;
+color:#000;
+}
+.audit a{
+color:#ffffff;
+}
+.calender-data{
+overflow:hidden;
+width:100%;
+}
+#primary-left ul.ui-listview li a
+{
+	min-height: 23px;
+	background: #F3F3F3;
+	color: #535353;
+	font-weight: normal;
+	font-size: 14px;
+	padding-top: 12px;
+	padding-bottom: 2px;
+	padding-right: 0px;
+}
+.checkbox_background
+{
+	width: 33px;
+	height: 38px;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 100;
+	cursor: pointer;
+}
+.left_list_view_li
+{
+	display: inline;
+	height: 45px;
+}
+.left_list_view_li div.ui-btn-text
+{
+	border-bottom: 1px solid #E2E2E1;
+	border-right: 1px solid #E2E2E1;
+}
+.left_list_view li.ui-li-divider
+{
+	height: 27px;
+	padding-top: 12px;
+	padding-bottom: 2px;
+	border-left: 7px solid #AEAEAE;
+	padding-right: 0px;	
+}
+.content-secondry ul.ui-listview
+{
+	margin-left: 15px;
+}
+.content-secondry ul.ui-listview li
+{
+	border-bottom: 0px;
+}
+.calendar_nav div.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-up-b
+{
+	border: 0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	background: transparent;
+	margin-top: 6px;
+}
+.calendar_nav div.ui-btn-hover-b,.calendar_nav div.ui-btn-down-b,.calendar_nav div.ui-focus
+{
+	border: 0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	background: transparent;
+	-moz-box-shadow: none;
+	margin-top: 6px;
+}
+
+.left_btn span.ui-btn-inner
+{
+	background: url(../css/images/icons2/Layer_6.png) no-repeat #E3E3E3;
+	background-position: 4px 5px;
+	border: 0px solid;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	behavior: url(js/Required/PIE.htc);
+	box-shadow: inset 0px 0px 6px #E2E2E2;
+	-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+	-moz-box-shadow: inset 0px 0px 6px #E2E2E2;
+	width: 40px;
+	padding: 7px 0px 7px 15px;
+}
+.right_btn span.ui-btn-inner
+{
+	background: url(../css/images/icons2/Layer_7.png) no-repeat #E3E3E3;
+	background-position: 37px 4px;
+	border: 0px solid;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	behavior: url(js/Required/PIE.htc);
+	box-shadow: inset 0px 0px 6px #E2E2E2;
+	-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+	-moz-box-shadow: inset 0px 0px 6px #E2E2E2;
+	width: 40px;
+	padding: 7px 15px 7px 0px;
+}	
+.calendar_nav span.ui-btn-text
+{
+	color: #7994A9;
+	font-weight: normal;
+}
+.calendar_nav
+{
+	width: 62px !important;
+	/* margin-top: 0px !important; */
+	margin-bottom: 0px;
+}
+.calendar_nav button
+{	
+	width: 62px;
+}
+.calendar_nav_share div.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-up-b,
+.calendar_nav_share div.ui-btn-hover-b,.calendar_nav_share div.ui-btn-down-b,.calendar_nav_share div.ui-focus
+{
+	border: 0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	background: transparent;
+	-moz-box-shadow: none;
+}
+.calendar_nav_share span.ui-btn-inner
+{
+	border: 0px solid;
+	background: #E3E3E3;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	behavior: url(js/Required/PIE.htc);
+	box-shadow: inset 0px 0px 6px #E2E2E2;
+	-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+	-moz-box-shadow: inset 0px 0px 6px #E2E2E2;
+	width: 69px;
+	padding: 7px 20px 7px 0px;
+}
+
+.calendar_nav_share span.ui-btn-text
+{
+	color: #7994A9;
+}
+.calendar_nav_share
+{
+	width: 90px !important;
+	/* margin-top: 0px !important; */
+	margin-bottom: 0px;
+}
+.calendar_nav_share button
+{	
+	width: 100px;
+}
+.calendar_nav_share span.ui-btn-text div.export_img
+{
+	background: url(../css/images/icons2/Layer_11.png) transparent;
+	width: 19px;
+	height: 14px;
+	position: absolute;
+	left: 56px;
+	top: 2px;
+}
+#current-month fieldset.ui-corner-all div.ui-select a.ui-btn,#current-month fieldset.ui-corner-all div.ui-select div.ui-focus
+{
+	background: none;
+	border: 0px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	behavior: url(js/Required/PIE.htc);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#current-month fieldset.ui-corner-all div.ui-select div.ui-btn,#current-month fieldset.ui-corner-all div.ui-select div.ui-focus
+{
+	background: none;
+	border: 0px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	behavior: url(js/Required/PIE.htc);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#current-month fieldset.ui-corner-all div.ui-select a.ui-btn span.ui-btn-inner span.ui-icon
+{
+		background: url(../css/images/icons/d.png) no-repeat transparent;
+		width: 19px;
+		height: 12px;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		behavior: url(js/Required/PIE.htc);
+		margin-top: -6px;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+}
+.month-browser-wrap
+{
+	background: #F3F3F3;
+	position: relative;
+	padding-bottom: 5px;
+}
+.month-browser-wrap li 
+{
+	height: 37px !important;
+}
+#primary-left div.left_list_view ul
+{
+	margin: 0px !important;
+}
+#home_page div.ui-header
+{
+	background: url(../css/images/bg_body.jpg) repeat-x transparent;
+	height: 60px;
+}
+.logo_img
+{	
+	float: left;
+	margin-top: 10px;
+}
+.logo_text
+{
+	border-left: 1px solid #C4D6E3;
+	color: #FFFFFF;
+	font-family: proxima,'Trebuchet MS',Verdana,sans-serif;
+	font-size: 18px;
+	line-height: 1;
+	margin: 5px 0 0 0;
+	padding: 15px 0 10px 10px;
+	text-align: left;
+	float: left;
+	/* width: 30%; */
+}
+#home_footer div.ui-navbar ul
+{
+	padding: 0px 10%;
+	background: linear-gradient( #444 /*{a-bup-background-start}*/, #2d2d2d /*{a-bup-background-end}*/);
+}
+#home_footer ul.ui-grid-d span.ui-btn-text
+{
+	color: #EEEEEE;
+	top: 9px;
+}
+#home_footer ul.ui-grid-d li.ui-block-a span.ui-btn-inner span.ui-icon
+{
+	background: url(../css/images/icons2/5_Layer_16.png) no-repeat transparent;
+	width: 20px;
+	height: 20px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	behavior: url(js/Required/PIE.htc);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#home_footer ul.ui-grid-d li.ui-block-b span.ui-btn-inner span.ui-icon
+{
+	background: url(../css/images/icons2/3_Layer_14.png) no-repeat transparent;
+	width: 18px;
+	height: 17px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	behavior: url(js/Required/PIE.htc);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#home_footer ul.ui-grid-d li.ui-block-c span.ui-btn-inner span.ui-icon
+{
+	background: url(../css/images/icons2/2_Layer_13.png) no-repeat transparent;
+	width: 22px;
+	height: 25px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	behavior: url(js/Required/PIE.htc);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#home_footer ul.ui-grid-d li.ui-block-d span.ui-btn-inner span.ui-icon
+{
+	background: url(../css/images/icons2/4_Layer_15.png) no-repeat transparent;
+	width: 23px;
+	height: 23px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	behavior: url(js/Required/PIE.htc);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#home_footer ul.ui-grid-d li.ui-block-e span.ui-btn-inner span.ui-icon
+{
+	background: url(../css/images/icons2/6_Layer_17.png) no-repeat transparent;
+	width: 23px;
+	height: 17px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	behavior: url(js/Required/PIE.htc);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#home_footer div.ui-navbar ul.ui-grid-d li.ui-block-a a
+{
+	border-left: 0px;
+}
+#home_footer div.ui-navbar ul.ui-grid-d li span.ui-btn-inner
+{
+	padding-top: 20px !important;
+}
+#primary-left div.left_list_view ul li.ui-li-divider
+{
+	border-right: 1px solid #E2E2E2;
+}
+.share_btn
+{
+	position: absolute;
+	right: 0px;
+}
+#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner
+{
+	padding-left: 0px;
+	padding-right: 36px;
+	border: 0px;
+}
+#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner span.ui-btn-text
+{
+	color: #517E9F;
+}
+.menu_btn
+{
+	display: none !important;
+}
+.calendar_wrapper li
+{
+	background: #FFFFFF;
+}
+
+
+/*--------------- Pop Up page Event Details -----------*/
+#event_detail p
+{
+	/* margin: 0px; */
+}
+#event_detail div.ui-header.ui-bar-c
+{
+	border-color: transparent;
+	background: #EEEEEE;
+}
+#event_detail div.ui-header a.ui-btn-left span.ui-btn-inner
+{
+	padding-top: 6px;
+	padding-left: 12px;
+	border: 0px;
+}
+#event_detail div.ui-header a.ui-btn-left,#event_detail div.ui-header a.ui-btn-right
+{
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	behavior: url(js/Required/PIE.htc);
+}
+#event_detail div.ui-header a.ui-btn-left span.ui-btn-inner span.ui-icon
+{
+	display: none;
+}
+#event_detail div.ui-header a.ui-btn-left.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c,#event_detail a.ui-btn-hover-c,#event_detail a.ui-btn-down-c
+{
+	background: #E3E3E3;
+	box-shadow: inset 0px 0px 6px #E2E2E2;
+	-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+	color: black;
+	border: 1px solid rgba(204, 204, 204, 0.39);
+}
+
+#event_detail div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c,#event_detail a.ui-btn-hover-c,#event_detail a.ui-btn-down-c
+{
+	background: #E3E3E3;
+	box-shadow: inset 0px 0px 6px #E2E2E2;
+	-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+	color: black;
+	border-color: #CCC;
+	border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#event_detail div.ui-header a.ui-btn-right span.ui-btn-inner
+{
+	border: 0px;
+}
+.backgroung_wrapper
+{
+	background: #EEEEEE;
+	/* padding: 0px 10px 10px 10px; */
+}
+.main-container
+{
+	background: #FFFFFF;
+}
+.event_detail_header_content
+{
+	/* border: 1px solid #E4E4E4; */
+	border-left: 7px solid #009899;
+	border-top: 0px;
+	padding: 5px;
+}
+.event_detail_header_content p
+{
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	color: #656565;
+}
+.event_detail_header_content h3
+{
+	color: #636363;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 17px;
+}
+#event_detail div.ui-content
+{
+	padding: 0px;
+}
+.event_detail_content
+{
+	border: 1px solid #E4E4E4;
+	padding: 10px;
+}
+#event_detail div.event_detail_content
+{
+		font-size: 14px;
+		padding-top: 0px;
+}
+#event_detail div.event_detail_content p
+{
+	margin-top: 9px;
+}
+
+#event_detail div.ui-header a.ui-btn-left span.ui-btn-text
+,#event_detail div.ui-header a.ui-btn-right span.ui-btn-text
+{
+	color: #517E9F;
+	font-weight: normal;
+}
+#event_detail div.ui-header h2
+{
+	color: #517E9F;
+	font-weight: normal;
+}
+.event_detail_content p
+{
+	line-height: 27px;
+	color: #656565;
+}
+/*------------------for Event-list ---------------*/
+#event_list div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c,#event_list a.ui-btn-hover-c,#event_list a.ui-btn-down-c
+{
+	background: #E3E3E3;
+	box-shadow: inset 0px 0px 6px #E2E2E2;
+	-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+	color: black;
+	border-color: #CCC;
+	margin-top: 4px;
+	border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#event_list div.ui-header a.ui-btn-right span.ui-btn-inner
+{
+	border: 0px;
+}
+#event_list div.ui-content
+{
+	padding: 0px;
+}
+#event_list div.ui-header
+{
+	background: #EEEEEE;
+}
+#event_list div.ui-header h2,#event_list div.ui-header a.ui-btn-left span.ui-btn-text,#event_list div.ui-header a.ui-btn-right span.ui-btn-text
+{
+	color: #517E9F;
+}
+#event_list div.ui-header a.ui-btn-left,#event_list div.ui-header a.ui-btn-right
+{
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	behavior: url(js/Required/PIE.htc);
+}
+#event_list div.ui-header a.ui-btn-left.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c,#event_list a.ui-btn-hover-c,#event_list a.ui-btn-down-c
+{
+	background: #E3E3E3;
+	box-shadow: inset 0px 0px 6px #E2E2E2;
+	-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+	color: black;
+	border-color: #CCC;
+	margin-top: 4px;
+	border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#event_list div.event_detail_content  li.page_list_1
+{
+	border-left: 10px solid #039B96;
+}
+#event_list div.event_detail_content  li.page_list_2
+{
+	border-left: 10px solid #E00018;
+}
+#event_list div.event_detail_content  li.page_list_3
+{
+	border-left: 10px solid #64CB34;
+}
+#event_list div.event_detail_content  li.page_list_4
+{
+	border-left: 10px solid #FF2F9B;
+}
+#event_list div.event_detail_content  li.page_list_5
+{
+	border-left: 10px solid #3B6482;
+}
+#event_list div.event_detail_content  li.page_list_6
+{
+	border-left: 10px solid #FF2F9B;
+}
+#event_list div.event_detail_content  li.ui-btn div.ui-btn-inner
+{
+
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+.event_list_left_time
+{
+	display: inline;
+    float: left;
+    padding-top: 20px;
+	font-weight: normal;
+	white-space: normal;
+}
+#event_list div.event_detail_content  li.ui-btn div.ui-btn-text a.ui-link-inherit
+{
+	padding-bottom: 0px;
+	color: rgb(104,104,104);
+}
+#event_list div.event_detail_content  li.ui-btn div.ui-btn-text a.ui-link-inherit p.ui-li-desc
+{
+	margin: 0px;
+}
+#event_list div.month-browser-wrap ul
+{
+	list-style-type: none;
+}
+#event_list li.calendar_nav span.ui-btn-text
+{	
+	display: none;
+}
+#event_list li.calendar_nav span.ui-btn-inner
+{
+	background: url(../css/images/icons2/Layer_6.png) no-repeat #E3E3E3;
+	width: 24px;
+	height: 15px;
+	background-position: 12px 4px;
+	/* box-shadow: inset 0px 0px 1px #000;
+	-webkit-box-shadow: inset 0px 0px 1px #000; */
+	border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#event_list li.calendar_nav.right_btn span.ui-btn-inner
+{
+	background: url(../css/images/icons2/Layer_7.png) no-repeat #E3E3E3;
+	width: 24px;
+	height: 15px;
+	background-position: 18px 4px;
+}
+#event_list div.ui-header li.left_btn 
+{
+	float: left;
+	margin-left: 7%;
+}
+#event_list div.ui-header li.right_btn
+{
+	float: left;
+}
+#current-month
+{
+	float: left;
+	width: 164px;
+}
+#current-month fieldset
+{
+	margin-left: 5px;
+    margin-top: 5px;
+}
+#event_list div.ui-header h2
+{
+	float: left;
+	margin-left: 0px;
+	margin-right: 11px;
+	font-weight: normal;
+	margin-top: 11px;
+}
+#event_list div.ui-content
+{
+	clear: both;
+}
+#event_list div.ui-header li
+{
+	list-style: none;
+}
+#event_list li.left_btn
+{
+	position: absolute;
+	right: 19%;
+}
+#event_list li.right_btn
+{
+	position: absolute;
+	right: 15%;
+}
+#event_list li#current-month
+{
+	margin-left: 8%;
+}
+#event_list li#current-month div.ui-select div.ui-btn span.ui-btn-inner span.ui-icon
+{
+	display: none;
+}
+#event_list li#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner
+{
+	padding-left: 0px;
+	padding-right: 4px;
+	border: 0px;
+}
+#event_list li#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner span.ui-btn-text
+{
+	font-size: 17px;
+	font-weight: normal;
+}
+#event_list div.ui-header a.ui-btn-left span.ui-btn-inner
+{
+	padding-left: 10px;
+	font-weight: normal;
+	border: 0px;
+}
+#event_list div.ui-header a.ui-btn-left span.ui-icon
+{
+	display: none;
+}
+/*------------------for Export ---------------*/
+#export div.ui-header
+{
+	background: #EEEEEE;
+}
+#export div.ui-content li.ui-first-child
+{
+	border-top: 0px;
+}
+#export div.ui-content li.ui-btn
+{
+	background: #FFFFFF;
+	border-color: #D5D5D5;
+}
+#export div.ui-content li.ui-btn span.ui-icon,#export div.ui-header a.ui-btn-left span.ui-icon
+{
+	display: none;
+}
+#export div.ui-content li.ui-btn div.ui-btn-text img
+{
+	position: absolute;
+	top: 7px;
+	left: 7px;
+}
+#export div.ui-header a.ui-btn-left span.ui-btn-inner
+{	
+	padding-left: 11px;
+	padding-top: 6px;
+	border: 0px;
+}
+#export div.ui-content li.ui-btn div.ui-btn-text a
+{
+	margin-left: 25px;
+	font-weight: normal;
+	color: rgb(99,99,99);
+}
+#export div.ui-header a.ui-btn-left,#event_list div.ui-header a.ui-btn-right
+{
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	behavior: url(js/Required/PIE.htc);
+}
+#export div.ui-header a.ui-btn-left.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c,#export a.ui-btn-hover-c,#export a.ui-btn-down-c
+{
+	background: #E0E0E0;
+	box-shadow: inset 0px 0px 6px #E2E2E2;
+	-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+	color: black;
+	border-color: #DDDDDD;
+	margin-top: 3px;
+	font-weight: normal;
+	border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#export div.ui-header h2,#export div.ui-header a.ui-btn-left span.ui-btn-text,#export div.ui-header a.ui-btn-right span.ui-btn-text
+{
+	color: #517E9F;
+	font-weight: normal;
+	margin-top: 12px;
+}
+#event_list div.ui-content li.ui-btn span.ui-icon,#export div.ui-header a.ui-btn-left span.ui-icon
+{
+	background: #B9B9B9 /*{global-icon-disc}*/;
+	background-image: url(images/icons-18-white.png) /*{global-icon-set}*/;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+	behavior: url(js/Required/PIE.htc);
+	background-position: -108px -1px;
+} 
+/*------------------for Contact us ---------------*/
+#contact_us div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c,#contact_us a.ui-btn-hover-c,#contact_us a.ui-btn-down-c
+{
+	background: #E3E3E3;
+	box-shadow: inset 0px 0px 6px #E2E2E2;
+	-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+	color: black;
+	border-color: #CCC;
+	margin-top: 3px;
+	border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#contact_us div.ui-header a.ui-btn-right span.ui-btn-inner
+{
+	border: 0px;
+}
+#contact_us div.ui-header a.ui-btn-left,#contact_us div.ui-header a.ui-btn-right
+{
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	behavior: url(js/Required/PIE.htc);
+}
+#contact_us div.ui-header h2,#contact_us div.ui-header a.ui-btn-left span.ui-btn-text,#contact_us div.ui-header a.ui-btn-right span.ui-btn-text
+{
+	color: #517E9F;
+}
+#contact_us div.ui-header
+{
+	background: #EEEEEE;
+}
+#contact_us div.ui-content div.ui-field-contain textarea
+{	
+	
+}
+#contact_us div.ui-content div.ui-field-contain label
+{
+	
+}
+#contact_us div.ui-content div.ui-field-contain textarea
+{
+	width: 100%;
+	background: #FFFFFF;
+	padding: 11px;
+	white-space: initial;
+	line-height: 28px;
+}
+#contact_us div.ui-content  div.ui-field-contain li.ui-li textarea
+{
+	width: 75%;
+	background: #FFFFFF;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border: 0px;
+	text-align: left;
+}
+#contact_us div.ui-content  div.ui-field-contain li.ui-li
+{
+	background: #FFFFFF;
+}
+#contact_us div.ui-content  div.ui-field-contain li.ui-li label
+{
+	font-weight: normal;
+	display: block;
+	float: left;
+	margin-top: 10px;
+	width: 20%;
+	margin-right: 0px;
+}
+.rating_container
+{
+	float: left;
+	margin-top: 0.35%;
+	margin-left: 7px;
+}
+.rating_text
+{
+	float: left;
+	margin: 13px 13px 0px 13px;
+	font-weight: normal;
+	color: #5F5F5F;
+}
+#contact_us div.ui-content a.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-up-d,
+#contact_us div.ui-content a.ui-btn-hover-d
+{
+	background: #ffffff;
+}
+#contact_us div.ui-header div.background_wrap{
+background: url(../css/images/bg_body.jpg) repeat-x transparent;
+height: 60px;
+}
+#contact_us label,#contact_us textarea,#contact_us a
+{
+	color: #5F5F5F;
+}
+#contact_us div.attachment_content
+{
+	width: 100px;
+	height: 100px;
+	margin-right: 5px;
+	float: left;
+}
+/*--------------- setting page ------- */
+#setting div.ui-content li.ui-li div.ui-field-contain div.ui-input-text {
+background: #FFFFFF;
+box-shadow: none;
+-webkit-box-shadow: none;
+border: 0px;
+}
+#setting div.ui-header div.background_wrap{
+background: url(../css/images/bg_body.jpg) repeat-x transparent;
+height: 60px;
+}
+#setting div.ui-header h2,#setting div.ui-header a.ui-btn-left span.ui-btn-text,#setting div.ui-header a.ui-btn-right span.ui-btn-text
+{
+	color: #517E9F;
+}
+#setting div.ui-content li.ui-li
+{
+		background: #FFFFFF;
+}
+#setting div.ui-content li.ui-li div.ui-field-contain  label
+{
+	margin-right: 0px;
+	margin-top: 8px;
+	color: #656565;
+}
+#setting div.ui-content li.ui-li div.ui-field-contain
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#setting div.ui-content ul
+{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	margin-top: 35px;
+}
+#setting div.ui-content ul label
+{
+	font-weight: bold;
+	color: #333333;
+	margin-left: 12px;
+}
+	
+#setting div.ui-content ul li.ui-li
+{
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	behavior: url(js/Required/PIE.htc);
+	margin-top: 3px;
+}
+#setting div.ui-content ul li.ui-li a
+{
+	font-weight: normal;
+	color: #656565;
+}
+#setting div.ui-content ul li.ui-li span.ui-icon
+{
+	/* display: none; */
+}
+#setting div.ui-content a.setting_logout
+{
+	font-weight: normal;
+	background: #FFFFFF;
+	margin-bottom: 70px;
+}
+
+.timeZone label
+{
+	font-weight: bold;
+	margin-left: 12px;
+	color: #333333;
+}
+#time-Zone
+{
+	padding: 0px;
+}
+#time-Zone span.left_label_text
+{
+	position: absolute;
+	top: 17px;
+	left: 13px;
+	font-weight: normal;
+	color: #656565;
+}
+#time-Zone div.ui-select a.ui-btn.ui-btn-corner-all
+{
+	background: transparent;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	behavior: url(js/Required/PIE.htc);
+	border: 0px;
+	box-shadow: none;
+}
+#time-Zone div.ui-select a.ui-btn.ui-btn-corner-all div.ui-btn-inner
+{
+	background: transparent;
+}
+#time-Zone div.ui-select a.ui-btn.ui-btn-corner-all span.ui-btn-inner span.ui-btn-text
+{
+	text-align: right;
+	font-size: 13px;
+}
+.right-value
+{
+	float: right;
+	font-weight: bold;
+	color: #333333;
+}
+#setting div.ui-content li.ui-btn
+{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	behavior: url(js/Required/PIE.htc);
+}
+#login div.ui-content
+{
+	background: url(images/icons2/back_login.png);
+}
+#login
+{
+	background: url(images/icons2/back_login.png);
+}
+.logo_text_login img
+{
+	float: left;
+}
+.logo_text_login h1
+{
+	margin: 0px;
+	font-size: 24px;
+	color: #E8EEF3;
+}
+.logo_text_login h3
+{
+	margin: 0px;
+	color: #E8EEF3;
+	font-size: 17px;
+}
+.below_text
+{
+	color: #E8EEF3;
+	text-align: center;
+	margin-top: 40px;
+}
+#login div.ui-content li.ui-li div.ui-field-contain div.ui-input-text {
+background: #FFFFFF;
+box-shadow: none;
+-webkit-box-shadow: none;
+border: 0px;
+float: left;
+}
+#login div.ui-content li.ui-li 
+{
+background: #FFFFFF;
+width: 100%;
+margin-top: 3%;
+border-radius: 10px;
+-webkit-border-radius: 10px;
+behavior: url(js/Required/PIE.htc);
+padding-left: 0px;
+padding-right: 0px;
+}	
+#login div.ui-content li.ui-li  div.ui-field-contain
+{
+	margin: 0px;
+	padding-left: 12px;
+}
+#login div.ui-content li div:first-child
+{
+	border-bottom: 1px solid #D3D6D8;
+}
+#login div.ui-content li.ui-li  div.ui-field-contain label
+{
+	color: #8C8B99;
+	margin-top: 6px;
+	float: left;
+}
+#login div.ui-content ul a
+{
+	width: 100%;
+	margin-top: 6%;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	behavior: url(js/Required/PIE.htc);
+}
+.content_wraper
+{
+	width: 30%;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 6%;
+}
+.login_detail
+{
+	margin-top: 15%;
+}
+#login div.ui-footer
+{
+	color: #FEFFFF;
+	position: absolute;
+	bottom: 0px;
+	background: transparent;
+	border: 0px;
+	font-size: 14px;
+	text-align: center;
+	width: 100%;
+	font-weight: normal;
+}
+/*--------------- for add Events to calendar --------*/
+#add_events_to_calendar div.ui-content
+{
+	padding-top: 0px;
+	padding-right: 0px;
+	background: #F3F3F3;
+}
+#add_events_to_calendar div.ui-header.ui-bar-c 
+{
+border-color: transparent;
+background: #EEEEEE;
+}
+#add_events_to_calendar div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c, #add_events_to_calendar a.ui-btn-hover-c, #add_events_to_calendar a.ui-btn-down-c 
+{
+background: #E3E3E3;
+box-shadow: inset 0px 0px 6px #E2E2E2;
+-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+color: black;
+border-color: #CCC;
+border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#add_events_to_calendar div.ui-header a.ui-btn-right 
+{
+border-radius: 4px;
+-webkit-border-radius: 4px;
+behavior: url(js/Required/PIE.htc);
+}
+#add_events_to_calendar div.ui-header h2 
+{
+color: #517E9F;
+font-weight: normal;
+}
+ #add_events_to_calendar div.ui-header a.ui-btn-right span.ui-btn-text
+{
+color: #517E9F;
+font-weight: normal;
+}
+#add_events_to_calendar div.ui-header a.ui-btn-right span.ui-btn-inner span.ui-icon
+{	
+	background: url(images/icons2/Layer_19.png) Transparent;
+	width: 16px;
+	height: 16px;
+	border: 0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#add_events_to_calendar div.ui-content div.select_nav
+{
+	background: #F3F3F3;
+}
+#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap div.ui-field-contain div.ui-select a
+{
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	behavior: url(js/Required/PIE.htc);	
+	border: 0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	background: #E4E4E4;
+	width: 161px;
+}
+#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap div.filter_event_text
+{
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+	color: #686868;
+}
+#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap div.filter_event_select_year
+{
+	float: left;
+}
+#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap div.filter_event_select_year div.ui-field-contain
+{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-top: 0px;
+}
+#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap
+{
+	float: left;
+	margin-right: 2%;
+	/* margin-left: -10px; */
+}
+
+
+#add_events_to_calendar div.ui-content div.select_nav div.audit_committe_wrap div.ui-field-contain div.ui-select a
+{
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	behavior: url(js/Required/PIE.htc);
+	border: 0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	background: #E4E4E4;
+	width: 400px;
+	margin-left: -10px;
+}
+#add_events_to_calendar div.ui-content div.select_nav div.audit_committe_wrap
+{
+	float: left;
+}
+#select-choice-1-listbox
+{
+	top: 58px;
+	left: 0px;
+}
+#select-choice-2-listbox
+{
+	top: 58px;
+	left: 0px;
+	background: #EEEEEE;
+}
+#select-choice-2-listbox div.ui-header h1
+{
+	font-weight: normal;
+}
+#select-choice-2-listbox div.ui-header a.ui-btn-left
+{
+	left: 212px;
+	border: 1px solid #E0E0E0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #E1E1E1;
+	width: 54px;
+	height: 26px;
+	margin-right: 2px;
+	top: 3px;
+}
+#select-choice-2-listbox div.ui-header a.ui-btn-left span.ui-btn-inner
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	box-shadow: inset 0px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 0px 0px #FFF;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+#select-choice-2-listbox div.ui-header a.ui-btn-left span.ui-btn-inner span.ui-icon
+{
+	display: none;
+}
+#select-choice-2-listbox div.ui-header a.ui-btn-left span.ui-btn-inner span.ui-btn-text
+{	
+	color: #636363;
+	font-weight: normal;
+	padding-top: 1px;
+	font-size: 14px;
+	left: 0px;
+}
+#select-choice-2-listbox ul.ui-selectmenu-list  li
+{
+	background: #FFFFFF;
+}
+#select-choice-2-listbox ul.ui-selectmenu-list  li.ui-focus
+{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#select-choice-2-listbox ul.ui-selectmenu-list  li div.ui-btn-inner span.ui-icon.ui-icon-checkbox-on
+{
+	background: url(images/icons-18-white.png) #4596CE;
+	background-position: -647px -1px;
+}
+#add_events_to_calendar div.ui-content div.select_nav div.audit_committe_wrap div.ui-field-contain
+{
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-top: 0px;
+	border: 0px;
+	padding-bottom: 0px;
+}
+#add_events_to_calendar div.ui-content div.select_nav
+{
+	padding-top: 10px;
+}
+#add_events_to_calendar div.ui-content div.main_content
+{
+	clear: both;
+}
+#add_events_to_calendar div.ui-content div.main_content fieldset
+{
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	behavior: url(js/Required/PIE.htc);
+}
+#add_events_to_calendar div.ui-content div.main_content fieldset ul.ui-listview
+{
+	margin: 0px;
+}
+#add_events_to_calendar div.ui-content div.main_content fieldset div.ui-controlgroup-controls li
+{
+	padding: 0px;
+	border: 0px;
+}
+#add_events_to_calendar div.event_list_left_time 
+{
+display: inline;
+float: left;
+padding-top: 6px;
+font-weight: normal;
+white-space: normal;
+margin-right: 10px;
+color: #000000;
+}
+#add_events_to_calendar div.ui-content div.main_content fieldset div.ui-controlgroup-controls li
+{
+	border: 0px;
+}
+#add_events_to_calendar div.ui-content div.main_content fieldset div.ui-controlgroup-controls li div.ui-checkbox label
+{
+	background: #FFFFFF;
+}
+#add_events_to_calendar div.ui-content div.main_content fieldset div.ui-controlgroup-controls li div.ui-checkbox label span.ui-btn-inner p.ui-li-desc
+{
+	margin-top: 5px;
+	color: #969696;
+}
+#add_events_to_calendar div.ui-content div.main_content fieldset div.ui-controlgroup-controls li div.ui-checkbox label span.ui-btn-inner span.ui-btn-text
+{
+	color: #676767;
+	font-weight: normal;
+}
+#add_events_to_calendar div.ui-content div.select_nav div.audit_committe_wrap a.ui-link span.right_img
+{
+	position: absolute;
+	top: 9px;
+	right: 10px;
+	z-index: 100;
+}
+#add_events_to_calendar div.ui-content div.select_nav div div.ui-field-contain div.ui-select a span.ui-btn-inner span.ui-btn-text
+{
+	font-weight: normal;
+	color: #686868;
+}
+#add_events_to_calendar div.ui-content div.select_nav div.audit_committe_wrap a.ui-link div.ui-btn span.ui-btn-inner span.ui-btn-text
+{
+	font-weight: normal;
+	color: #686868;
+}
+#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox div.ui-checkbox
+{
+	position: absolute;
+	right: 0px;
+}
+#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox div.ui-checkbox label
+{
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	behavior: url(js/Required/PIE.htc);
+	margin-top: 0px;
+	background: #E4E4E4;
+	border: 0px;
+	
+}
+#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox div.ui-checkbox label span.ui-btn-inner span.ui-btn-text
+{
+	font-weight: normal;
+	color: #686868;
+}
+
+#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox  div.ui-checkbox label span.ui-icon.ui-icon-checkbox-off {
+background: transparent;
+}
+#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox  div.ui-checkbox label span.ui-icon-checkbox-off {
+background: transparent;
+border: 0px;
+box-shadow: none;
+}
+#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox div.ui-checkbox label span.ui-icon.ui-icon-checkbox-on {
+background: url(../css/images/icons2/Layer_18.png) transparent;
+box-shadow: none;
+-webkit-box-shadow: none;
+width: 22px;
+height: 20px;
+}
+/*------------------for Mobiles ---------------*/
+@media screen and (max-width:480px){
+	#current-month
+	{
+		width: 118px;
+	}
+	#home_page div.ui-content 
+	
+	{
+		padding: 0px;
+	}
+	.logo_text
+	{
+		font-size: 15px;
+		margin-top: 10px;
+	}	
+	.calender-data
+	{
+		padding: 0px;
+	}
+	.content-primary
+	{
+		width: 100%;
+		margin-bottom: 5%;
+		display: none;
+	}
+	.content-secondry
+	{
+		width: 100%;
+	}
+	#home_footer div.ui-navbar ul
+	{
+		padding: 0px;
+	}
+	#home_footer div.ui-navbar ul.ui-grid-d li span.ui-btn-text
+	{	
+		font-size: 10px;
+	}
+	 .calendar_nav span.ui-btn-text,.calendar_nav_share span.ui-btn-text,#current-month fieldset.ui-corner-all div.ui-select div.ui-btn span.ui-btn-inner span.ui-icon
+	{
+		display: none !important;
+	}
+	
+	.calendar_nav_share,.calendar_nav_share button
+	{
+		width: 44px !important;
+	}
+	.calendar_nav_share span.ui-btn-inner
+	{
+		background: url(../css/images/icons2/Layer_11.png) no-repeat #E3E3E3;
+		width: 42px;
+		height: 30px;
+		padding: 0px;
+		background-position: 15px;
+	}
+	#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner
+	{
+		padding-right: 10px;
+	}
+	#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner span.ui-btn-text
+	{
+		font-weight: normal;
+		color: #698FA4;
+	}
+	.calendar ul.month-browser li
+	{
+		width: 80.3%;
+	}
+	.left_btn span.ui-btn-inner
+	{
+		background: url(../css/images/icons2/Layer_6.png) no-repeat #E3E3E3;
+		width: 40px;
+		height: 30px;
+		padding: 0px;
+		position: absolute;
+		background-position: 11px;
+	}
+	.right_btn span.ui-btn-inner
+	{
+		background: url(../css/images/icons2/Layer_7.png) no-repeat #E3E3E3;
+		width: 40px;
+		height: 30px;
+		padding: 0px;
+		position: absolute;
+		background-position: 15px;
+	}
+	.month-browser-wrap
+	{
+		height: 45px;
+	}
+	.month-browser
+	{
+		width: 100% !important;
+	}
+	.menu_btn span.ui-btn-inner
+	{
+		background: url(../css/images/icons2/Layer_12.png) no-repeat transparent;
+		width: 18px;
+		height: 19px;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		behavior: url(js/Required/PIE.htc);
+		background-position: 7px 5px;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+	.menu_btn div.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-up-b,.menu_btn div.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-up-b.ui-btn-hover-b
+	{
+		margin: 0px;
+		width: 37px;
+		height: 30px;
+		background: rgba(231, 230, 230, 0.9);
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		behavior: url(js/Required/PIE.htc);
+		margin-top: 7px;
+		margin-left: 4px;
+	}
+	.menu_btn div.ui-btn-hover-b
+	{
+		margin: 0px;
+		width: 37px;
+		height: 30px;
+		background: rgba(231, 230, 230, 0.9);
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		behavior: url(js/Required/PIE.htc);
+		margin-top: 7px;
+		margin-left: 4px;
+	}
+	.menu_btn
+	{
+		display: block !important;
+		width: 37px !important;
+	}
+	.left_btn
+	{
+		position: absolute;
+		right: 33%;
+	}
+	.right_btn
+	{
+		position: absolute;
+		right: 19%;
+	}
+	#current-month fieldset
+	{
+		margin-top: 5px;
+	}
+	.calendar ul.month-browser li
+	{
+		width: 44.3%;
+	}
+	.calendar_nav button
+	{
+		width: 37px !important;
+	}
+	.left_list_view li.ui-li-divider
+	{
+		height: 25px;
+	}
+	.calendar-day
+	{
+		height: 50px;
+	}
+	.calendar li
+	{
+		width: 11.9%
+	}
+	.calendar ul
+	{
+		width: 107%;
+	}
+	.calendar ul.weekdays li
+	{
+		padding:4px 0.81%;
+		padding-bottom: 0px;
+	}
+	.event_list_text
+	{
+		height: 7px;
+		border-left: 7px solid;
+		float: left;
+	}
+	.e_l_text{
+		display: none;
+	}
+	#event_detail div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c,
+	#event_detail div.ui-header a.ui-btn-hover-c.ui-btn-right
+	{
+		padding: 0px;
+		width: 30px;
+		height: 28px;
+	}
+	#event_detail div.ui-header a.ui-btn-right span.ui-btn-text
+	{
+		display: none;
+	}
+	#event_detail div.ui-header a.ui-btn-right span.ui-btn-inner
+	{
+		padding: 0px;
+		width: 30px;
+		height: 20px;
+		margin: 3px;
+		border: 0px;
+	}
+	#event_detail div.ui-header a.ui-btn-right span.ui-btn-inner span.ui-icon
+	{
+		background: rgba(0, 0, 0, 0) /*{global-icon-disc}*/;
+		background-image: url(images/icons-18-white.png) /*{global-icon-set}*/;
+		background-repeat: no-repeat;
+		-webkit-border-radius: 9px;
+		border-radius: 9px;
+		behavior: url(js/Required/PIE.htc);
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		left: 2px;
+	}
+	/*--------------- Pop Up page Event Details -----------*/
+	
+	.event_detail_content
+	{
+		border-left: 0px;
+		border-right: 0px;
+	}
+	.event_detail_header_content
+	{
+		border-right: 0px;
+	}
+	.backgroung_wrapper
+	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#event_detail div.ui-header a.ui-btn-left span.ui-btn-inner
+	{
+		background: url("../css/images/icons2/Layer_2.png") !important;
+		background-repeat: no-repeat;
+		width: 23px;
+		height: 23px;
+		padding: 0px;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		behavior: url(js/Required/PIE.htc);
+	}
+	#event_detail div.ui-header a.ui-btn-left span.ui-btn-text
+	{
+		display: none;
+	}
+	#event_detail div.ui-header a.ui-btn-left.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c, #event_detail a.ui-btn-hover-c, #event_detail a.ui-btn-down-c
+	{
+		background: #DFDFDF;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		color: black;
+		border-color: #CCC;
+		width: 24px;
+		padding: 3px;
+		border-radius: 4px;
+		-webkit-border-radius: 4px;
+		behavior: url(js/Required/PIE.htc);
+	}
+	#event_list li.calendar_nav span.ui-btn-inner
+	{
+		background: url(../css/images/icons2/Layer_6.png) no-repeat #E3E3E3;
+		width: 24px;
+		height: 15px;
+		background-position: 12px 4px;
+	}
+	#event_list li.calendar_nav.right_btn span.ui-btn-inner
+	{
+		background: url(../css/images/icons2/Layer_7.png) no-repeat #E3E3E3;
+		width: 24px;
+		height: 15px;
+		background-position: 18px 4px;
+	}
+	/*---------------  page Event list -----------*/
+	.event_list_left_time 
+	{
+		white-space: normal;
+		width: 50px;
+		padding-left: 20px;
+		padding-top: 11px;
+		font-size: 14px;
+	}
+	.time_bold
+	{
+		font-weight: bold;
+		font-size: 16px;
+		color: #424242;
+	}
+	#event_list div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c,
+	#event_list div.ui-header a.ui-btn-hover-c.ui-btn-right
+	{
+		padding: 0px;
+		width: 35px;
+		height: 26px;
+	}
+	#event_list div.ui-header a.ui-btn-right span.ui-btn-inner
+	{
+		padding: 0px;
+		width: 30px;
+		height: 20px;
+		margin: 3px;
+		border: 0px;
+	}
+	#event_list div.ui-header a.ui-btn-right span.ui-btn-text
+	{
+		display: none;
+	}
+	#event_list div.ui-header a.ui-btn-left span.ui-btn-text
+	{
+		display: none;
+	}
+	#event_list div.ui-header a.ui-btn-left span.ui-btn-inner
+	{
+		background: url(../css/images/icons2/Layer_2.png) no-repeat transparent;
+		width: 23px;
+		height: 19px;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		behavior: url(js/Required/PIE.htc);
+		margin: 0px;
+		padding: 3px;
+		background-position: 3px;
+	}
+	#event_list div.ui-header a.ui-btn-left span.ui-icon
+	{
+		display: none;
+	}
+	#event_list li#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner span.ui-btn-text
+	{
+		font-size: 16px;
+	}
+	#event_list div.ui-header h2
+	{
+		font-size: 17px;
+		margin-top: 12px;
+		display: none;
+	}
+	#event_list li#current-month
+	{
+		margin-left: 39px;
+		margin-top: 1px;
+	}
+	#event_list li.calendar_nav span.ui-btn-inner
+	{
+		height: 26px;
+		width: 33px;
+		background-position: 9px 3px;
+	}
+	#event_list li.calendar_nav.right_btn span.ui-btn-inner
+	{
+		height: 26px;
+		width: 33px;
+		background-position: 12px 3px;
+	}
+	#event_list li.calendar_nav
+	{
+		width: 30px !important;
+	}
+	#event_list li.left_btn
+	{
+		right: 30%;
+	}
+	#event_list li.right_btn
+	{
+		right: 17%;
+	}
+	#event_list div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c, #event_list a.ui-btn-hover-c.ui-btn-right, #event_list a.ui-btn-down-c.ui-btn-right
+	{
+		margin-top: 5px;
+	}
+	/*------------------for Contact us ---------------*/
+	#contact_us div.ui-header a.ui-btn-right span.ui-btn-inner
+	{
+		padding: 0px;
+		width: 30px;
+		height: 20px;
+		margin: 3px;
+		border: 0px;
+	}
+	#contact_us div.ui-header a.ui-btn-right span.ui-btn-text
+	{
+		display: none;
+	}
+	#contact_us div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c, #contact_us a.ui-btn-hover-c.ui-btn-right, #contact_us a.ui-btn-down-c.ui-btn-right
+	{
+	
+	}
+	#contact_us div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c,
+	#contact_us div.ui-header a.ui-btn-hover-c.ui-btn-right
+	{
+		padding: 0px;
+		width: 35px;
+		height: 26px;
+	}
+	#contact_us div.ui-content  div.ui-field-contain li.ui-li label
+	{
+		margin-top: 1%;
+	}
+	#contact_us div.ui-content div.ui-field-contain li.ui-li label
+	{
+		width: 30%;
+	}
+	#contact_us div.ui-content div.ui-field-contain li.ui-li textarea
+	{
+		width: 70%;
+		padding-top: 2px;
+	}
+	#setting div.ui-content li.ui-li div.ui-field-contain
+	{
+		padding-top: 0px;
+	}
+	#contact_us div.ui-content div.ui-field-contain
+	{
+		border: 0px;
+	}
+	#setting div.ui-content li.ui-li div.ui-field-contain label
+	{
+		width: 30%;
+		float: left;
+		font-size: 12px;
+	}
+	#setting div.ui-content li.ui-li div.ui-field-contain div.ui-input-text
+	{
+		width: 59%;
+		float: left;
+	}
+	#setting div.ui-content ul li.ui-li a
+	{
+		font-size: 12px;
+		margin-top: 2px;
+	}
+	#setting div.ui-content ul li.ui-li
+	{
+		padding-top: 2px;
+		padding-bottom: 5px;
+	}
+	#setting div.ui-content li.ui-li div.ui-field-contain label
+	{
+		margin-top: 11px;
+	}
+	#time-Zone span.left_label_text
+	{
+		top: 14px;
+		font-size: 12px;
+	}
+	#time-Zone div.ui-select div.ui-btn.ui-btn-corner-all
+	{	
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	#login div.content_wraper
+	{
+		width: 90%;
+	}
+	#login div.ui-content li.ui-li div.ui-field-contain
+	{
+		padding: 0px;
+		padding-left: 12px;
+	}
+	
+	#add_events_to_calendar div.ui-content div.main_content fieldset div.ui-controlgroup-controls li div.ui-checkbox label span.ui-btn-inner
+	{
+		padding-left: 0px;
+	}
+	#add_events_to_calendar div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c, #add_events_to_calendar a.ui-btn-hover-c.ui-btn-right, #add_events_to_calendar a.ui-btn-down-c.ui-btn-right
+	{
+	margin-top: 5px;
+	}
+	#add_events_to_calendar div.ui-header a.ui-btn-right span.ui-btn-inner 
+	{
+	padding: 0px;
+	width: 30px;
+	height: 20px;
+	margin: 3px;
+	border: 0px;
+	}
+	#add_events_to_calendar div.ui-header a.ui-btn-right span.ui-btn-text
+	{
+	display: none;
+	}
+	#add_events_to_calendar div.ui-content div.select_nav div.audit_committe_wrap a.ui-link
+	{
+		padding: 0px;
+		width: 35px;
+		height: 26px;
+	}
+	#add_events_to_calendar div.ui-content div.select_nav div.audit_committe_wrap a.ui-link div.ui-btn span.ui-btn-inner
+	{
+		padding: 0px;
+		width: 30px;
+		height: 33px;
+		margin: 3px;
+		border: 0px;
+	}
+	#add_events_to_calendar div.ui-content div.select_nav div.audit_committe_wrap a.ui-link div.ui-btn span.ui-btn-inner span.ui-btn-text
+	{
+		display: none;
+	}
+	#add_events_to_calendar div.ui-content div.select_nav div.audit_committe_wrap div.ui-field-contain div.ui-select a
+	{
+		width: 250px;
+	}
+	#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap div.filter_event_select_year
+	{
+	float: left;
+	position: absolute;
+	right: 0px;
+	}
+	#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap
+	{
+		width: 100%;
+		padding-bottom: 12px;
+	}
+	#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox div.ui-checkbox label
+	{
+		border-radius: 4px;
+		-webkit-border-radius: 4px;
+		behavior: url(js/Required/PIE.htc);
+		margin-top: 0px;
+		background: #E4E4E4;
+		border: 0px;
+	}
+	#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox div.ui-checkbox label span.ui-btn-inner span.ui-btn-text
+	{
+		display: none;
+	}
+	#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox div.ui-checkbox label span.ui-btn-inner
+	{
+		padding: 0px;
+		height: 34px;
+		width: 40px;
+	}	
+	#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox div.ui-checkbox label span.ui-icon
+	{
+		right: 10px;
+	}
+	#add_events_to_calendar div.ui-content div.audit_committe_wrap div.select_all_checkbox div.ui-checkbox
+	{
+		right: 2px;
+	}
+	
+}
+@media screen and (min-width:480px) and (max-width:681px){
+	#setting div.ui-content li.ui-li div.ui-field-contain label
+	{
+		width: 30%;
+		float: left;
+	}
+	#setting div.ui-content li.ui-li div.ui-field-contain div.ui-input-text
+	{
+		width: 59%;
+		float: left;
+	}
+	.content_wraper
+	{
+		width: 60%;
+	}
+
+}
+/*------------------for tabs ---------------*/
+@media screen and (min-width:767px) and (max-width:1280px){
+	.content-primary
+	{
+		width:25%;
+	}
+	.calendar ul.month-browser li
+	{
+		/* width: 44.3%; */
+	}
+	.calendar li
+	{
+		width: 12.5%;
+	}
+	.calendar-day
+	{
+		height: 110px;
+	}
+	.month-browser
+	{
+		/* margin: 0px !important; */
+		/* width: 93% !important; */
+		/* margin-left: 5px !important; */
+	}
+	/* .calendar ul.weekdays 
+	{
+	height: 32px;
+	} */
+	.calendar ul.weekdays li
+	{
+		/* padding: 19px 0.79%;
+		padding-bottom: 0px; */
+	}
+	#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner span.ui-btn-text {
+	/* font-weight: normal; */
+	color: #698FA4;
+	}
+	/*---------------  page Event list -----------*/
+	#event_list li#current-month
+	{
+		margin-left: 9%;
+		width: 115px;
+	}
+	#event_list li.left_btn
+	{
+		right: 30%;
+	}
+	#event_list li.right_btn
+	{
+		right: 23%;
+	}
+	#home_page li.calendar_nav
+	{
+		width: 63px !important;
+		margin-right: 5px;
+	}
+	.content_wraper
+	{
+		width: 40%;
+	}
+	
+
+}
+/*------------- for landscape mode ---------------- */
+@media screen and (min-width:481px) and (max-width:765px){
+	.calendar li
+	{
+		width: 12.6%;
+	}
+	.calendar-day
+	{
+		height: 104px;
+	}
+	.calendar_nav span.ui-btn-text
+	{
+		display: none;
+	}
+	.left_btn span.ui-btn-inner
+	{
+		background: url(../css/images/icons2/Layer_6.png) no-repeat #E3E3E3;
+		width: 40px;
+		height: 30px;
+		padding: 0px;
+		position: absolute;
+		background-position: 11px;
+	}
+	.right_btn span.ui-btn-inner
+	{
+		background: url(../css/images/icons2/Layer_7.png) no-repeat #E3E3E3;
+		width: 40px;
+		height: 30px;
+		padding: 0px;
+		position: absolute;
+		background-position: 15px;
+	}
+	.calendar_nav button
+	{
+		width: 37px !important;
+	}
+	.calendar_nav
+	{
+		width: 50px !important;
+	}
+	.month-browser
+	{
+		margin: auto !important;
+		width: 68% !important;
+	}
+	.calendar ul.month-browser li
+	{
+		width: 51.3%;
+	}
+	#event_list li#current-month 
+	{
+	margin-left: 64px;
+	}
+	#event_list li.calendar_nav span.ui-btn-inner 
+	{
+		background: url(../css/images/icons2/Layer_6.png) no-repeat #E3E3E3;
+		height: 26px;
+		width: 33px;
+		background-position: 9px 3px;
+	}
+	#event_list li.calendar_nav.right_btn span.ui-btn-inner 
+	{
+		background: url(../css/images/icons2/Layer_7.png) no-repeat #E3E3E3;
+		height: 26px;
+		width: 33px;
+		background-position: 12px 3px;
+	}
+	#event_list li.right_btn
+	{
+	position: absolute;
+	right: 33%;
+	}
+	#event_list li.left_btn 
+	{
+	position: absolute;
+	right: 40%;
+	}
+	.content_wraper
+	{
+		width: 60%;
+	}
+	#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap
+	{
+		width: 100%;
+		padding-bottom: 15px;
+	}
+	#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap div.filter_event_select_year
+	{
+		position: absolute;
+		right: 0px;
+	}
+}
+@media screen and (min-width:481px) and (max-width:654px){
+.calendar_nav_share span.ui-btn-inner
+	{
+		background: url(../css/images/icons2/Layer_11.png) no-repeat #E3E3E3;
+		width: 42px;
+		height: 30px;
+		padding: 0px;
+		background-position: 15px;
+	}
+	.calendar_nav_share button ,.calendar_nav_share
+	{
+	width: 50px !important;
+	}
+	.calendar_nav_share span.ui-btn-text
+	{
+		display: none;
+	}
+	
+	
+}
+@media screen and (min-width:481px) and (max-width:550px){
+	.month-browser
+	{
+		width: 82% !important;
+	}
+
+}
+@media screen and (min-width:880px) and (max-width:1240px){
+	.month-browser
+	{
+		width: 50% !important;
+	}
+
+}
+@media screen and (min-width:1240px){
+	.month-browser
+	{
+		width: 40% !important;
+	}
+
+}
+@media screen and (min-width:755px) and (max-width:985px){
+	#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap
+	{
+		width: 100%;
+	}
+	#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap
+	{
+		width: 100%;
+		padding-bottom: 15px;
+	}
+	#add_events_to_calendar div.ui-content div.select_nav div.filter_event_wrap div.filter_event_select_year
+	{
+		position: absolute;
+		right: 0px;
+	}
+
+}
+@media screen and (min-width: 481px) and (max-width: 560px)
+{
+	#add_events_to_calendar div.ui-content div.select_nav div.audit_committe_wrap div.ui-field-contain div.ui-select a
+	{
+		width: 320px;
+	}
+}
+/* ---------- Add for check box ------------*/
+
+.checkbox_background div.ui-checkbox input
+{
+	visibility: hidden;
+}
+.left_list_view div.checkbox_background div.ui-checkbox label
+{
+	padding: 0px;
+	background: transparent;
+	border: 0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	padding-top: 8px;
+	height: 30px;
+	margin: 0px;
+}
+.left_list_view div.checkbox_background div.ui-checkbox label span.ui-icon-checkbox-off
+{
+	background: transparent;
+	border: 0px;
+	box-shadow: none;
+}
+.left_list_view div.checkbox_background div.ui-checkbox label span.ui-icon.ui-icon-checkbox-off
+{
+	background: transparent;
+}
+.left_list_view div.checkbox_background div.ui-checkbox label span.ui-icon.ui-icon-checkbox-on
+{
+	background: url(../css/images/icons2/Layer_18.png) transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	width: 22px;
+	height: 20px;
+}
+.left_list_view div.checkbox_background div.ui-checkbox label span.ui-btn-inner
+{
+	background: transparent;
+	box-shadow: none;
+	border: 0px;
+	padding: 0px;
+	height: 24px;
+}
+.left_list_view div.checkbox_background div.ui-checkbox label span.ui-btn-inner span.ui-icon
+{
+	left: 6px;
+}
+.pointer
+{
+	cursor: pointer;
+}
+/*----------------- For Popup screen ------------*/
+#popup
+{
+	width: 20%;
+	height: 56%;
+	position: absolute;
+	top: 103px;
+	right: 10px;
+}
+#popup div.ui-header h2
+{
+	color: #517E9F;
+	font-weight: normal;
+	margin-top: 12px;
+}
+#popup div.ui-header {
+background: #EEEEEE;
+height: 32px;
+border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
+behavior:url(js/Required/PIE.htc);
+border-color: #EEEEEE;
+}
+#popup div.ui-content
+{
+	overflow: hidden;
+	padding: 28px;
+	background: #E2E2E2;
+	border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	behavior:url(js/Required/PIE.htc);	
+}
+#popup div.ui-content li.ui-btn 
+{
+	background: #FFFFFF;
+	border-color: #D5D5D5;
+}
+#popup div.ui-content li.ui-first-child {
+	border-top: 0px;
+	border-radius: 6px 6px 0px 0px;
+	-webkit-border-radius: 6px 6px 0px 0px;
+	behavior:url(js/Required/PIE.htc);
+}
+#popup div.ui-content li.ui-last-child {
+	border-radius: 6px 6px 0px 0px;
+	-webkit-border-radius: 0px 0px 6px 6px;
+	behavior:url(js/Required/PIE.htc);
+}
+#popup div.ui-content li.ui-btn div.ui-btn-text img {
+position: absolute;
+top: 7px;
+left: 7px;
+}
+#popup div.ui-content li.ui-btn div.ui-btn-text a {
+margin-left: 25px;
+font-weight: normal;
+color: rgb(99,99,99);
+}
+#popup div.ui-content li.ui-btn span.ui-icon
+{	
+	display: none;
+}
+.triangle-with-shadow {
+width : 267px;
+height : 18px;
+position : relative;
+overflow : hidden;
+box-shadow : 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow : 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+}
+.triangle-with-shadow:after {
+content : "";
+position : absolute;
+width : 30px;
+height : 30px;
+background : #EEEEEE;
+transform : rotate(45deg);
+-webkit-transform : rotate(45deg);
+top : 7px;
+left : 201px;
+box-shadow : -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow : -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
+}
+.popup_wraper
+{
+	box-shadow : -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow : -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+#modal div.ui-header {
+background: #EEEEEE;
+height: 45px;
+border:none !important;
+border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
+}
+#modal div.ui-header li.left_btn {
+float: left;
+margin-left: 7%;
+}
+#modal div.ui-header li {
+list-style: none;
+}
+#modal div.ui-content
+{
+	max-height: 87%;
+}
+#modal li#current-month {
+margin-left: 9%;
+width: 115px;
+}
+#modal li#current-month {
+margin-left: 8%;
+}
+#modal div.ui-header li {
+list-style: none;
+}
+#modal li#current-month {
+float: left;
+width: 164px;
+}
+#modal div.ui-header h2 {
+float: left;
+margin-left: 0px;
+margin-right: 11px;
+font-weight: normal;
+margin-top: 11px;
+}
+#modal div.ui-header h2, #modal div.ui-header a.ui-btn-left span.ui-btn-text, #modal div.ui-header a.ui-btn-right span.ui-btn-text {
+color: #517E9F;
+}
+#modal div.ui-header li.right_btn {
+float: left;
+}
+#modal li.right_btn {
+position: absolute;
+right: 25%;
+}
+#modal div.ui-header li {
+list-style: none;
+}
+#modal li#current-month {
+float: left;
+width: 164px;
+}
+#modal li.left_btn {
+position: absolute;
+right: 32%;
+}
+#modal li.calendar_nav span.ui-btn-text {
+display: none;
+}
+#modal li.calendar_nav span.ui-btn-inner {
+width: 24px;
+height: 15px;
+background-position: 12px 4px;
+border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#modal div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c, #modal a.ui-btn-hover-c, #modal a.ui-btn-down-c {
+background: #E3E3E3;
+box-shadow: inset 0px 0px 6px #E2E2E2;
+-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+color: black;
+border-color: #CCC;
+margin-top: 4px;
+border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#modal div.ui-header a.ui-btn-left.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c, #modal a.ui-btn-hover-c, #modal a.ui-btn-down-c {
+background: #E3E3E3;
+box-shadow: inset 0px 0px 6px #E2E2E2;
+-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+color: black;
+border-color: #CCC;
+margin-top: 4px;
+border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#modal div.ui-header a.ui-btn-left, #modal div.ui-header a.ui-btn-right {
+border-radius: 4px;
+-webkit-border-radius: 4px;
+behavior: url(js/Required/PIE.htc);
+}
+#modal div.ui-header a.ui-btn-left, #modal div.ui-header a.ui-btn-right {
+border-radius: 4px;
+-webkit-border-radius: 4px;
+behavior: url(js/Required/PIE.htc);
+}
+#modal div.ui-header a.ui-btn-left span.ui-btn-inner {
+padding-left: 10px;
+font-weight: normal;
+border: 0px;
+}
+#modal div.ui-header a.ui-btn-left span.ui-btn-text
+{
+	color: #517E9F;
+}
+#modal div.ui-header a.ui-btn-left span.ui-icon
+{
+display: none;
+}
+#modal li#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner {
+padding-left: 0px;
+padding-right: 4px;
+border: 0px;
+}
+#modal li#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner span.ui-btn-text {
+font-size: 17px;
+font-weight: normal;
+}
+#modal li#current-month fieldset.ui-controlgroup div.ui-controlgroup-controls span.ui-btn-inner span.ui-btn-text {
+color: #517E9F;
+}
+#modal li#current-month div.ui-select div.ui-btn span.ui-btn-inner span.ui-icon {
+display: none;
+}
+#modal div.backgroung_wrapper
+{
+	padding: 16px;
+	background: #EEEEEE;
+}
+#modal div.event_detail_content li.page_list_1 
+{
+border-left: 6px solid #039B96;
+}
+#modal div.event_detail_content  li.page_list_2
+{
+	border-left: 6px solid #E00018;
+}
+#modal div.event_detail_content  li.page_list_3
+{
+	border-left: 6px solid #64CB34;
+}
+#modal div.event_detail_content  li.page_list_4
+{
+	border-left: 6px solid #FF2F9B;
+}
+#modal div.event_detail_content  li.page_list_5
+{
+	border-left: 6px solid #3B6482;
+}
+#modal div.event_detail_content  li.page_list_6
+{
+	border-left: 6px solid #FF2F9B;
+}
+#modal div.event_detail_content  li.ui-btn div.ui-btn-inner
+{
+
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+#modal div.event_detail_content li.ui-btn div.ui-btn-inner {
+background: none repeat scroll 0 0 #FFFFFF;
+}
+#modal div.ui-content li.ui-btn span.ui-icon, #export div.ui-header a.ui-btn-left span.ui-icon {
+background: #B9B9B9 /*{global-icon-disc}*/;
+background-image: url(images/icons-18-white.png) /*{global-icon-set}*/;
+background-repeat: no-repeat;
+-webkit-border-radius: 9px;
+border-radius: 9px;
+background-position: -108px -1px;
+}
+#Event_detail_modal div.ui-header
+{
+	height: 37px;
+}
+ #Event_detail_modal div.ui-header a.ui-btn-right {
+border-radius: 4px;
+-webkit-border-radius: 4px;
+behavior: url(js/Required/PIE.htc);
+}
+#Event_detail_modal div.ui-header h2 {
+color: #517E9F;
+font-weight: normal;
+}
+#Event_detail_modal div.ui-header.ui-bar-c {
+border-color: transparent;
+background: #EEEEEE;
+}
+#Event_detail_modal div.ui-header a.ui-btn-right.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-left.ui-btn-up-c, #Event_detail_modal a.ui-btn-hover-c, #Event_detail_modal a.ui-btn-down-c {
+background: #E3E3E3;
+box-shadow: inset 0px 0px 6px #E2E2E2;
+-webkit-box-shadow: inset 0px 0px 6px #E2E2E2;
+color: black;
+border-color: #CCC;
+border: 1px solid rgba(204, 204, 204, 0.39);
+}
+#Event_detail_modal div.ui-header a.ui-btn-right span.ui-btn-inner {
+border: 0px;
+}
+#Event_detail_modal div.ui-header a.ui-btn-right span.ui-btn-text {
+color: #517E9F;
+font-weight: normal;
+}
+#Event_detail_modal div.ui-content {
+padding: 0px;
+height: 92%;
+background: #EEEEEE;
+}
+#Event_detail_modal div.event_detail_content {
+font-size: 14px;
+padding-top: 0px;
+}
+#Event_detail_modal div.event_detail_content p {
+margin-top: 9px;
+}
+#shade, #modal,#Event_detail_modal { 
+			display: none; 
+			}
+            #shade { 
+			position: fixed;
+			z-index: 100;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			}
+            #modal{ 
+			box-shadow: 0px 0px 11px 6px ! important;
+			-webkit-box-shadow: 0px 0px 11px 6px ! important;
+			border-radius: 11px ! important;
+			-webkit-border-radius: 11px ! important;
+			border: 5px solid #eeeeee ! important;
+			background:#eeeeee;
+			position: fixed;
+			z-index: 101; 
+			top: 15%; 
+			left: 30%; 
+			width: 50%;
+			height: 66%;
+			}
+            #shade { 
+			background: #000000;
+			opacity: .5; 
+			filter:alpha(opacity=50);
+			}
+			#Event_detail_modal { 
+			box-shadow: 0px 0px 11px 6px ! important;
+			-webkit-box-shadow: 0px 0px 11px 6px ! important;
+			border-radius: 11px ! important;
+			-webkit-border-radius: 11px ! important;
+			border: 5px solid #eeeeee ! important;
+			position: fixed;
+			z-index: 101; 
+			top: 15%; 
+			left: 30%; 
+			width: 50%;
+			height: 67%;
+			}
+			
