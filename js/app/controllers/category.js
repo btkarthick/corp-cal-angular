@@ -4,12 +4,14 @@ var setCategoryController = function($scope , calservice){
 	
 	$scope.listext = "Sample List text";
 	
-	calservice.getCalendarData();
-	
-	var s = calservice.getEventsData();
-	
-	alert(JSON.stringify(s));
-	
+	calservice.getCalDataByYear().then(function(data){
+		
+		calservice.setCalendarData(data);
+		
+		$scope.categories = calservice.getEventsTypeList();
+		
+		
+	});
 	
 };
 
