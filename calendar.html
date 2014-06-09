@@ -66,12 +66,16 @@
 						<div class="month-browser-wrap clearfix" ng-controller="SelectBoxController">
 							<ul class="month-browser clearfix">
 								
-								<li class="calendar_nav left_btn clearfix" ng-click="changeSomething();">
-									<a href="#"><button type="button" data-theme="b">{{prevMonth}}</button></a>
+								<li ng-model="ym.month" class="calendar_nav left_btn clearfix" data-prev-next="" data-custom-direction="prev" on-button-click="superb()">
+							<a href="#">
+									<button type="button" data-theme="b">
+										
+									</button>
+								</a>
 								</li>
 								<li id="current-month">
 								<fieldset data-role="controlgroup" data-type="horizontal">
-									<select data-role="none" name="select-month" ng-model="ym.month" ng-options="month for month in months" id="sel_month" data-native-menu="false" data-mini="true" ng-change="getSelectedMonth();"> 
+									<select data-role="none" name="select-month" ng-model="ym.month" ng-options="month for month in months" id="sel_month" data-native-menu="false" data-mini="true" ng-change="onMonthChange();"> 
 										
 										<!--<option ng-repeat="month in months" value="{{$index}}">{{month}}</option>-->
 										
@@ -81,8 +85,8 @@
 									</select>
 								</fieldset>
 								</li>
-								<li class="calendar_nav right_btn clearfix">
-									<a href="#"><button type="button"  data-theme="b"  data-toggle="button">{{nextMonth}}</button></a>
+								<li ng-model="ym.month" class="calendar_nav right_btn clearfix" data-prev-next="" custom-direction="next">
+									<a href="#"><button type="button"  data-theme="b"  data-toggle="button"></button></a>
 									
 								</li>
 								<li class="share_btn calendar_nav_share">
@@ -126,7 +130,7 @@
 		<script src="js/app/controllers/category.js"></script>
 		<script src="js/app/controllers/selectbox.js"></script>
 		<script src="js/app/services/calendar-data.js"></script>
-		<!--<script src="js/app/directives/jqmenhancer.js"></script>-->
+		<script src="js/app/directives/caldirective.js"></script>
 	
 	</body>
 	
