@@ -1,10 +1,13 @@
 var CL = angular.module("CropCalendarApp" , ["ngRoute"]);
 var date = new Date();
 
-CL.config(function($routeProvider){
+CL.config(function($routeProvider , $locationProvider){
 	
-	//$routeProvider.when("/" , {templateUrl : "views/test.html" , controller : "CategoryController"});
+	$routeProvider.when("/" , {templateUrl : "views/calendar-list.html" , controller : "EventsController"});
+	$routeProvider.when("/month/:monthIndex" , {templateUrl : "views/calendar-list.html" , controller : "EventsController"});
+	$routeProvider.otherwise({ redirectTo: "/" });
 	
+	//$locationProvider.html5Mode(true);
 });
 
 CL.value("currentYear" , date.getFullYear())

@@ -2,9 +2,7 @@
 
 var setCategoryController = function($scope , calservice){
 	
-	$scope.listext = "Sample List text";
-	
-	calservice.getCalDataByYear().then(function(data){
+	calservice.getCalDataByYear("2013").then(function(data){
 		
 		calservice.setCalendarData(data);
 		

@@ -1,0 +1,9 @@
+<li ng-repeat="day in days | orderBy : day.dayindex" class="calendar-day" ng-class="{inactive : day.status!='A'}">
+
+	<div class="date">
+			<a href="#" data-role="none">{{day.dayindex}}</a>
+     </div>
+
+		<custom-event-list ng-if="day.status!='I'" data-event-source="events" data-day-index="{{day.dayindex}}"></custom-event-list>
+
+</li>

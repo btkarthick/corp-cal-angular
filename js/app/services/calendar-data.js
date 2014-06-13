@@ -1,7 +1,13 @@
 
+/* Calendar service function
+ *
+ * Responsible for getting data via ajax
+ * Manipulate data
+ * 
+ */
 var setCalendarServices = function($http , $q , currentYear , currentMonth , FETCHURL){
 	
-	this.calendardata = {}
+	this.calendardata = null;
 	
 		
 	this.setCalendarData = function(paramData){
@@ -13,8 +19,33 @@ var setCalendarServices = function($http , $q , currentYear , currentMonth , FET
 	
 	this.getEventsTypeList = function(){
 		
-		return this.calendardata.Output.eventtypelist;
+		if(angular.isObject(this.calendardata))
+		{
+			return this.calendardata.Output.eventtypelist;	
+		}
 		
+		
+	};
+	
+	
+	this.getCalendarForMonth = function(monthindex){
+		
+		if(angular.isObject(this.calendardata))
+		{
+			return this.calendardata.Output.monthlist[monthindex];
+		}	
+		
+	};
+	
+	
+	this.getEventsForMonth = function(monthindex){
+	
+		if(angular.isObject(this.calendardata))
+		{
+			return this.calendardata.Output.events["year"].Months[monthindex];
+		}
+		
+	
 	};
 	
 	
@@ -59,39 +90,56 @@ var setCalendarServices = function($http , $q , currentYear , currentMonth , FET
 	
 };
 
+/*End of Calendar service */
 
 
-CL.service("calservice" , setCalendarServices);
+/*Start of Helper functions*/
 
+var setHelpers = function(MONTHLIST){
 
-/*CL.factory("calfactory" , function($http  , currentYear , currentMonth , FETCHURL){
-
-	var calservice = {}
-	var caldata = {}
+	var helpers = {}
 	
-	calservice.getCalDataByYear = function(cyear){
+	helpers.getNextPrevMonth = function(month , pnflag){
+		
+		
+		var prevnextmonth = "" , position;
+		
+		var offset = $.inArray(month , MONTHLIST);
+		
+		
+		if(pnflag === "prevmonth")
+		{
+				position = offset - 1;
+			    prevnextmonth = (position >= -1) ? MONTHLIST[position] : "true";
+		}
+		
+		else
+		{
+				position = offset + 1;
+				prevnextmonth = (position <= 12) ? MONTHLIST[position] : "true";
+		}
+		
+		return {"month" : prevnextmonth , "offset" : offset}
+		
+	};
 	
-		var year = (angular.isDefined(cyear)) ? cyear : currentYear;
+	
+	helpers.capitalize = function(word){
 		
-		year = year.toString();
 		
-		$http.get(FETCHURL +  year + ".json")
-		
-		.success(function(data, status, headers, config){
-					caldata = data;
-		}).
-		
-		error(function(data, status, headers, config){
+		return word.toLowerCase().replace(/\b[a-z]/g, function(letter) {
 			
-			console.log(status);
-			
+			return letter.toUpperCase();
+		
 		});
-		
 		
 	};
 	
 
-	return calservice;
-	
-	
-});*/
+	return helpers;
+};
+
+/*End of Helper functions*/
+
+CL.service("calservice" , setCalendarServices);
+CL.factory("calhelper" , setHelpers);
