@@ -8,8 +8,15 @@ var setCategoryController = function($scope , calservice){
 		
 		$scope.categories = calservice.getEventsTypeList();
 		
-		
+		angular.forEach($scope.categories , function(etypes){
+			
+			calservice.eventGuids.push(etypes.Guid);
+			
+		});
+	
 	});
+	
+
 	
 };
 

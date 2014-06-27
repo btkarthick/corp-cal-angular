@@ -26,6 +26,8 @@ var setEventsController = function($scope , $routeParams , calservice){
 	$scope.days = objCal;
 	$scope.events = events.Days;
 	
+	
+	
 	//console.log(events.Days);
 	
 }

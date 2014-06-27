@@ -122,7 +122,7 @@ var setEventsListing = function(){
 	
 		eventslist.link = function(scope , element , attrs){
 			
-			if(angular.isDefined(scope.dayEvents))
+			/*if(angular.isDefined(scope.dayEvents))
 			{
 				var html = "";
 				angular.forEach(scope.dayEvents , function(value){
@@ -134,14 +134,14 @@ var setEventsListing = function(){
 				});
 				
 				$(element).empty().append(html);
-			}	
+			}	*/
 			
 		};
 	
 	
-		eventslist.controller = function($scope){
+		eventslist.controller = function($scope , calservice){
 			
-			angular.forEach($scope.eventSource , function(value , key){
+		/*angular.forEach($scope.eventSource , function(value , key){
 				
 				if(value.EventDay === $scope.dayIndex)
 				{
@@ -153,16 +153,63 @@ var setEventsListing = function(){
 					
 				}
 				
-			});
+			});*/
 			
 		};
 	
 	return eventslist;
 };
 
-
 /*End of events listing directive*/
+
+var setCategoryListing = function(calservice){
+	
+	var objCatDirective = {}
+	
+	objCatDirective.restrict = "A";
+	
+	objCatDirective.scope = {
+		
+		guid : "@"
+	}
+	
+	objCatDirective.link = function(scope , element , attrs){
+	
+		$(element).find("INPUT").prop("checked" , true); 
+		
+		$(element).on("vclick" , function(event){
+			
+			if(event.target.type === "checkbox")
+				return;
+			
+			var isChecked = $(this).find("INPUT").is(":checked");
+									
+			if(isChecked)
+				{($(this).find("INPUT")).prop("checked" , false);}
+						
+			else
+				{($(this).find("INPUT")).prop("checked" , true);}
+						
+			setCheckboxOnoFF(!isChecked);
+		});
+		
+		$(element).on("vclick" , "INPUT" , function(){
+			
+			setCheckboxOnoFF($(this).is(":checked"));
+			
+		});
+				
+		var setCheckboxOnoFF = function(flag){
+			calservice.addRemoveEventTypeGuids({addremove : flag , guid : scope.guid});
+		}
+				
+	};
+	
+	return objCatDirective;
+	
+};
 
 CL.directive("prevNextMonth" , setPreveNextDirective);
 CL.directive("monthSelectbox" , setMonthSelectBox);
-CL.directive("customEventList" , setEventsListing)
+CL.directive("customEventList" , setEventsListing);
+CL.directive("categoryList" , setCategoryListing);

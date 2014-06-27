@@ -9,12 +9,28 @@ var setCalendarServices = function($http , $q , currentYear , currentMonth , FET
 	
 	this.calendardata = null;
 	
+	this.eventGuids = [];
+	
 		
 	this.setCalendarData = function(paramData){
 		
 		this.calendardata = paramData;
 	};
 	
+	
+	this.addRemoveEventTypeGuids = function(objparam){
+		
+		if(!objparam.addremove){
+			
+			this.eventGuids.splice($.inArray(objparam.guid, this.eventGuids),1);
+			
+		}
+		
+		else{
+			
+			this.eventGuids.push(objparam.guid);
+		}
+	};
 	
 	
 	this.getEventsTypeList = function(){
